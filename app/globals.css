@@ -1,0 +1,11 @@
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/inter";
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{background:#F8F4EF;color:#111;font-family:'Inter Variable',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important}}
+:focus-visible{outline:2px solid #9B6A3D;outline-offset:3px}
+.on-dark :focus-visible{outline-color:#B08D57}
+.link{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .35s ease}
+.link:hover,.link:focus-visible{background-size:100% 1px}
+.todo{border:1px dashed #B08D57;padding:.15rem .5rem;font-size:.8rem;color:#707070}
